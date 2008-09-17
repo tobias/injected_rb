@@ -1,0 +1,17 @@
+development:
+  developer_key: 5a2696ffc1e1ee93824fd6b464bd4d84253700d48faa9a22984bbd063121261d
+  secret: d8036f82f936fe8007f2796e36d0dc6bbd3abdd780b96a9fe52a1ddb92ed9fb9
+  namespace: wp-injected-some-namespace
+  server: togo.wetpaint.com
+
+test:
+  developer_key: 5a2696ffc1e1ee93824fd6b464bd4d84253700d48faa9a22984bbd063121261d
+  secret: d8036f82f936fe8007f2796e36d0dc6bbd3abdd780b96a9fe52a1ddb92ed9fb9
+  namespace: wp-injected-some-namespace
+  server: togo.wetpaint.com
+
+production:
+  developer_key: 5a2696ffc1e1ee93824fd6b464bd4d84253700d48faa9a22984bbd063121261d
+  secret: d8036f82f936fe8007f2796e36d0dc6bbd3abdd780b96a9fe52a1ddb92ed9fb9
+  namespace: wp-injected-some-namespace
+  server: wapi.wetpaint.com
