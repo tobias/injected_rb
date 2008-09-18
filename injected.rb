@@ -36,7 +36,7 @@ module Injected
 
       result_body = (method == :post) ? result.body : result
 
-      #RAILS_DEFAULT_LOGGER.debug "Result: #{result_body}"
+      RAILS_DEFAULT_LOGGER.debug "Result: #{result_body}"
 
       doc = Hpricot.parse(result_body)
       #check for xml response errors
@@ -157,6 +157,18 @@ module Injected
       execute_call(params)
     end
 
+    def editCellUrl(cellId, cellUrl)
+      params = {
+        'cell.cellId' => cellId,
+        'cell.url' => cellUrl,
+        :method => :post,
+        :ticket => self.user_token,
+        :path => BASE_PATH + 'editCellUrl.do',
+        :output => :api
+      }
+
+      execute_call(params)
+    end
 
   end
 
